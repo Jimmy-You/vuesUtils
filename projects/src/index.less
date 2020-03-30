@@ -1,0 +1,369 @@
+// 此处可以放置全局样式
+
+
+html {
+	background: #ebedef;
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+.pointer {
+	cursor: pointer;
+}
+.baseColor {
+	background: #fff;
+	margin: 0;
+}
+.flex {
+	display: flex;
+}
+.primary {
+	color: @theme-primary;
+}
+.hover_primary {
+	&:hover{
+		color: @theme-primary;
+	}
+}
+.card-header {
+	font-weight: 600;
+}
+.danger {
+	color: @theme-danger;
+}
+.info {
+	color: @theme-info;
+}
+.warning {
+	color: @theme-warning;
+}
+.success {
+	color: @theme-success;
+}
+.bg-danger {
+	background-color: @theme-danger;
+}
+.bg-info {
+	background-color: @theme-info;
+}
+.bg-warning {
+	background-color: @theme-warning;
+}
+.bg-success {
+	background-color: @theme-success;
+}
+.bg-white {
+	background-color: #fff;
+}
+.bg-gray {
+	background-color: @gray-8;
+}
+.bg-unable {
+	background-color: @gray-5;
+}
+// 提供类似模板的样式  覆盖iview的默认样式
+// 表单控件
+// .normal-input {
+.ivu-input {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	padding: 0.375rem 0.75rem;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-clip: padding-box;
+	border: 1px solid #d8dbe0;
+	color: #768192;
+	background-color: #fff;
+	border-color: #d8dbe0;
+	border-radius: 0.25rem;
+	&:focus {
+		color: #768192;
+		background-color: #fff;
+		border-color: #958bef;
+		outline: 0;
+		-webkit-box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25);
+		box-shadow: 0 0 0 0.2rem rgba(50, 31, 219, 0.25);
+	}
+}
+
+// }
+// 弹窗
+.primary-modal {
+	.ivu-modal {
+		.ivu-btn-primary {
+			color: #fff;
+			background-color: @theme-primary;
+			border-color: @theme-primary;
+			&:hover {
+				color: #fff;
+				background-color: @theme-primary-hover;
+				border-color: @theme-primary-hover;
+			}
+		}
+		.ivu-modal-content {
+			border: 1px solid @theme-primary;
+			.ivu-modal-close {
+				.ivu-icon-ios-close {
+					color: #fff;
+				}
+			}
+			.ivu-modal-header {
+				color: #fff;
+				background-color: @theme-primary;
+				border-radius: 4px 4px 0 0;
+				.ivu-modal-header-inner {
+					color: #fff;
+				}
+			}
+			.modal-tabs {
+				.ivu-tabs-bar {
+					.ivu-tabs-nav {
+						.ivu-tabs-ink-bar {
+							background-color: @theme-primary;
+						}
+						.ivu-tabs-tab-active {
+							color: @theme-primary;
+							&:hover {
+								color: @theme-primary-hover;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ivu-modal-footer {
+		}
+	}
+}
+.warning-modal {
+	.ivu-modal {
+		.ivu-btn-primary {
+			color: #fff;
+			background-color: @theme-warning;
+			border-color: @theme-warning;
+			&:hover {
+				color: #fff;
+				background-color: @theme-warning-hover;
+				border-color: @theme-warning-hover;
+			}
+		}
+		.ivu-modal-content {
+			border: 1px solid @theme-warning;
+			.ivu-modal-close {
+				.ivu-icon-ios-close {
+					color: #fff;
+				}
+			}
+			.ivu-modal-header {
+				color: #fff;
+				background-color: @theme-warning;
+				border-radius: 4px 4px 0 0;
+				.ivu-modal-header-inner {
+					color: #fff;
+				}
+			}
+			.modal-tabs {
+				.ivu-tabs-bar {
+					.ivu-tabs-nav {
+						.ivu-tabs-ink-bar {
+							background-color: @theme-warning;
+						}
+						.ivu-tabs-tab-active {
+							color: @theme-warning;
+							&:hover {
+								color: @theme-warning-hover;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ivu-modal-footer {
+		}
+	}
+}
+.info-modal {
+	.ivu-modal {
+		.ivu-btn-primary {
+			color: #fff;
+			background-color: @theme-info;
+			border-color: @theme-info;
+			&:hover {
+				color: #fff;
+				background-color: @theme-info-hover;
+				border-color: @theme-info-hover;
+			}
+		}
+		.ivu-modal-content {
+			border: 1px solid @theme-info;
+			.ivu-modal-close {
+				.ivu-icon-ios-close {
+					color: #fff;
+				}
+			}
+			.ivu-modal-header {
+				color: #fff;
+				background-color: @theme-info;
+				border-radius: 4px 4px 0 0;
+				.ivu-modal-header-inner {
+					color: #fff;
+				}
+			}
+			.modal-tabs {
+				.ivu-tabs-bar {
+					.ivu-tabs-nav {
+						.ivu-tabs-ink-bar {
+							background-color: @theme-info;
+						}
+						.ivu-tabs-tab-active {
+							color: @theme-info;
+							&:hover {
+								color: @theme-info-hover;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ivu-modal-footer {
+		}
+	}
+}
+.convent-modal {
+	.ivu-modal {
+		.ivu-btn-primary {
+			color: #fff;
+			background-color: @theme-primary;
+			border-color: @theme-primary;
+			&:hover {
+				color: #fff;
+				background-color: @theme-primary-hover;
+				border-color: @theme-primary-hover;
+			}
+		}
+		.ivu-modal-content {
+			// border: 1px solid @theme-info;
+			.ivu-modal-close {
+				.ivu-icon-ios-close {
+					color: @font-gray-color;
+				}
+			}
+			.ivu-modal-header {
+				color: @font-gray-color;
+				background-color: #fff;
+				border-radius: 4px 4px 0 0;
+				.ivu-modal-header-inner {
+					color: @font-gray-color;
+					font-size: @font-14;
+					font-weight: 550;
+				}
+			}
+			.modal-tabs {
+				.ivu-tabs-bar {
+					.ivu-tabs-nav {
+						.ivu-tabs-ink-bar {
+							background-color: @theme-info;
+						}
+						.ivu-tabs-tab-active {
+							color: @theme-info;
+							&:hover {
+								color: @theme-info-hover;
+							}
+						}
+					}
+				}
+			}
+		}
+		.ivu-modal-footer {
+		}
+	}
+}
+
+// 按钮
+.ivu-btn-primary {
+	color: #fff;
+	background-color: @theme-primary;
+	border-color: @theme-primary;
+	&:hover {
+		color: #fff;
+		background-color: @theme-primary-hover;
+		border-color: @theme-primary-hover;
+	}
+}
+// .warning-button {
+//   .ivu-btn-warning {
+//     color: #fff;
+//     background-color: @theme-warning;
+//     border-color: @theme-warning;
+//     &:hover {
+//       color: #fff;
+//       background-color: @theme-warning-hover;
+//       border-color: @theme-warning-hover;
+//     }
+//   }
+// }
+// Popover
+
+//覆盖iview中tab样式
+.ivu-tabs-ink-bar {
+	height: 0;
+}
+.ivu-tabs-nav .ivu-tabs-tab {
+	color: @text-light;
+}
+.ivu-tabs-nav .ivu-tabs-tab-active {
+	color: #fff;
+	background-color: @theme-primary;
+	border-radius: 0.25rem 0.25rem 0 0;
+}
+.ivu-tabs-nav .ivu-tabs-tab-active:hover {
+	color: #fff !important;
+}
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+	color: @textHover-light;
+}
+// Page
+.mpage .ivu-page .ivu-page-item-active {
+	background: @theme-primary!important;
+	border: 1px solid @theme-primary!important;
+}
+.mpage .ivu-page .ivu-page-item:hover {
+	background: @theme-primary!important;
+	border: 1px solid @theme-primary!important;
+}
+//选项卡
+.convent-modal .ivu-modal .ivu-modal-content .modal-tabs .ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab-active {
+	color: #fff;
+}
+//  弹出框
+.templateChoose {
+	.ivu-card-body {
+		padding: 0;
+	}
+}
+//左菜单栏图标的样式
+.c-sidebar-nav-icon {
+	line-height: 17.5px;
+}
+ul,
+ol {
+	list-style-type: none;
+}
+img {
+	border: 0 none;
+	vertical-align: top;
+}
+
+i {
+	font-style: normal;
+	font-weight: normal;
+}
+p {
+	margin:0;
+}
+.cesium-viewer-bottom{
+	display: none;
+}
